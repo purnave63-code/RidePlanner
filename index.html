@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🌸 Ride Planner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+<h1>🌸 Ride Planner 🌸</h1>
+<p class="subtitle">Collin → School</p>
+
+
+<div class="card">
+
+<h2>👥 Who is going today?</h2>
+
+<label>
+<input type="checkbox" id="purnave" checked>
+Purnave
+</label>
+
+<label>
+<input type="checkbox" id="akshatha" checked>
+Akshatha
+</label>
+
+<label>
+<input type="checkbox" id="ashwini" checked>
+Ashwini
+</label>
+
+</div>
+
+
+<div class="card">
+
+<h2>🚗 Parent Availability</h2>
+
+<label>
+<input type="checkbox" id="akDad" checked>
+Akshatha's dad can pick up
+</label>
+
+<label>
+<input type="checkbox" id="ashDad" checked>
+Ashwini's dad can pick up
+</label>
+
+</div>
+
+
+<div class="card">
+
+<h2>🌷 Schedule</h2>
+
+<p id="turn"></p>
+
+<button onclick="planRide()">
+✨ Find Ride
+</button>
+
+<button onclick="nextTurn()">
+➡️ Next Day
+</button>
+
+<button onclick="resetApp()">
+🔄 Reset
+</button>
+
+</div>
+
+
+<div id="result" class="result"></div>
+
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
